@@ -46,9 +46,10 @@ public class MeetupController {
             @ApiResponse(code = 500, message = "An internal error has occurred") })
 
     @GetMapping(value = "/meetup/calculate/{id}")
-    public double getNumberOfBeerBoxesFor(@PathVariable Long id) throws WeatherServiceException {
+    public ResponseEntity getNumberOfBeerBoxesFor(@PathVariable Long id) throws WeatherServiceException {
         Optional<Meetup> meetup = meetupService.findMeetupById(id);
-        return meetupService.getNumberOfBeerBoxes(meetup);
+        double numberOfBeerBoxes = meetupService.getNumberOfBeerBoxes(meetup);
+        return ResponseEntity.ok("The number of beer boxes needed for the meetup " + meetup.get().getDescription() + " is: " + numberOfBeerBoxes);
     }
 
     /**
