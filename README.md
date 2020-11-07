@@ -2,7 +2,7 @@
 
 ## Technologies & Frameworks used:
 
-Java 8
+- Java 8
 - Springboot 
 - Retry
 - Circuit Breaker
