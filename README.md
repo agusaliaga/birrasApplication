@@ -17,10 +17,10 @@ Java 8
 - JPA
 
 ## DB Credentials
-user: admin 
-password: admin
-jdbcURL:jdbc:h2:mem:santander
-console: http://localhost:8080/h2/
+- user: admin 
+- password: admin
+- jdbcURL:jdbc:h2:mem:santander
+- console: http://localhost:8080/h2/
 
 ## Puerto y Host
 http://localhost:8080/
