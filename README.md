@@ -25,6 +25,9 @@ Java 8
 ## Puerto y Host
 http://localhost:8080/
 
+## Run the App
+mvn spring-boot:run
+
 ## Swagger
 http://localhost:8080/swagger-ui.html
 
@@ -55,3 +58,5 @@ Code coverage is aprox. 93%.
 - I use the max. temperature for the day, and retrieve the weather forecast for 18:00hs on the base that most meetups are after 18:00hs and before sunset a maximum temperature will be reached.
 - Admin and User can retrieve temperature for meetup within the next 5 days (we cannot predict further with certainty)
 
+## Controllers and Endpoints 
+![alt text](https://github.com/agusaliaga/birrasApp/blob/master/controllers.png)
