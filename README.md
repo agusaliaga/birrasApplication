@@ -59,4 +59,4 @@ Code coverage is aprox. 93%.
 - Admin and User can retrieve temperature for meetup within the next 5 days (we cannot predict further with certainty)
 
 ## Controllers and Endpoints 
-![alt text](https://github.com/agusaliaga/birrasApplication/blob/master/controllers.png)
+![alt text](https://github.com/agusaliaga/birrasApplication/blob/master/controllers.PNG)
