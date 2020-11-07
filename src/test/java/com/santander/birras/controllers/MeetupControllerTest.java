@@ -57,10 +57,10 @@ public class MeetupControllerTest {
         when(weatherService.getWeatherForecast("Argentina", "Cordoba", "2020-11-03")).thenReturn(weather);
         when(meetupService.getNumberOfBeerBoxes(Optional.of(meetup))).thenReturn(6.0);
 
-        double numBeerBoxes = meetupController.getNumberOfBeerBoxesFor(1L);
+        ResponseEntity response = meetupController.getNumberOfBeerBoxesFor(1L);
 
         verify(meetupService).findMeetupById(1L);
-        assertThat(numBeerBoxes).isEqualTo(6.0);
+        assertThat(response).isEqualTo(ResponseEntity.ok("The number of beer boxes needed for the meetup " + meetup.getDescription() + " is: " + 6.0));
     }
 
     @Test
